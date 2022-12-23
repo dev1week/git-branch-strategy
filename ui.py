@@ -10,7 +10,7 @@ class View(QWidget):
         self.initUI()
         
     def initUI(self):
-        self.lbl1 = Qlabel(self.date.toString(Qt.DefaultLocaleLongDate), self)
+        
         self.te1 = QPlainTextEdit()
         self.te1.setReadOnly(True)
         
