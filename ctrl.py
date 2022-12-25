@@ -9,6 +9,16 @@ class Control:
 
         if operator == '+':
             return f'{num1}+{num2}={self.sum(num1, num2)}'
+        elif operator == '-':
+            return f'{num1}+{num2}={self.sum(num1, num2)}'
+        elif operator == '*':
+            return f'{num1}+{num2}={self.sum(num1, num2)}'
+        elif operator == '/':
+            return f'{num1}+{num2}={self.sum(num1, num2)}'
+        elif operator == '^':
+            return f'{num1}+{num2}={self.sum(num1, num2)}'
+        elif operator == '%':
+            return f'{num1}+{num2}={self.sum(num1, num2)}'
         else:
             return "Calculate Error"
     def connectSignals(self):
@@ -23,7 +33,13 @@ class Control:
         return a-b
     def mul(self, a,b):
         return a*b 
-
+    def mod(self, a, b):
+        try:
+            if(b==0):
+                raise Exception('Division Error')
+        except Exception as e: 
+            return e 
+        return a%b
     def div(self, a,b):
         try:
             if(b==0):
