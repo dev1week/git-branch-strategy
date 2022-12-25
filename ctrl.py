@@ -19,3 +19,5 @@ class Control:
             return a+b 
         except:
             return "Calculation Error"
+    def sub(self, a,b):
+        return a-b
