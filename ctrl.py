@@ -9,6 +9,14 @@ class Control:
 
         if operator == '+':
             return f'{num1}+{num2}={self.sum(num1, num2)}'
+        elif operator == '-':
+            return f'{num1}+{num2}={self.sum(num1, num2)}'
+        elif operator == '*':
+            return f'{num1}+{num2}={self.sum(num1, num2)}'
+        elif operator == '/':
+            return f'{num1}+{num2}={self.sum(num1, num2)}'
+        elif operator == '^':
+            return f'{num1}+{num2}={self.sum(num1, num2)}'
         else:
             return "Calculate Error"
     def connectSignals(self):
